@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/8d9d18ad-9c90-4f45-81f6-2b6729bfc6e5)# The Journey from Simple Websites to Next.js 14: How Web Development Evolved
+# The Journey from Simple Websites to Next.js 14: How Web Development Evolved
 
 A long time ago, when the internet was new, websites were like people walking on foot. This time was called **Web 1.0**, where websites were simple and basic—just like when humans only used their feet to travel.
 
