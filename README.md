@@ -76,10 +76,4 @@ In this course, we'll explore the evolution of web development and dive deep int
 
 If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
 
-## License
-
-This course material is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
-
----
-
 Happy coding, and welcome to the exciting world of Next.js 14!
