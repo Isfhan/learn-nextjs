@@ -60,12 +60,14 @@ As people started using **cars** and **motorcycles**, travel became faster and m
 
 
 ### **Stage 5: Full-Stack Frameworks - Airplane Era**
+![image](https://github.com/user-attachments/assets/dce6e0ef-3544-4aa6-9af8-5cdf1cfc714f)
 
-![image](https://github.com/user-attachments/assets/92cb9c38-eb45-4b5c-a55d-caf58d605d52)
 
 After cars, people invented airplanes. Airplanes could cover long distances quickly, just like **Next.js** helped web developers build websites that were fast and efficient by combining both the frontend and backend.
-
 **Next.js** allowed developers to build websites that were not only fast but also **dynamic** and **SEO-friendly**. It was like getting on a plane instead of driving a car—covering huge distances quickly and efficiently.
+
+#### Next.js enters to solve react issues
+![image](https://github.com/user-attachments/assets/92cb9c38-eb45-4b5c-a55d-caf58d605d52)
 
 - **Features:** Server-side rendering, static site generation, and API routes—all in one place.
 - **Problem:** Even though it’s powerful, you need to learn some new tools to use it properly.
@@ -73,10 +75,14 @@ After cars, people invented airplanes. Airplanes could cover long distances quic
 
 
 ### **Stage 6: Next.js 14 - The Spaceship Era**
-![image](https://github.com/user-attachments/assets/91e9f6ed-c26a-446f-8893-b5c959a34264)
+![image](https://github.com/user-attachments/assets/c2f649bb-9e9c-4107-a5b5-deb3e95ba17a)
+
 
 
 Now, with **Next.js 14**, we’ve entered the **spaceship** era of web development. This version brings even more flexibility, making it easy to build **hybrid websites**—some pages can be static (like a brochure), while others can be dynamic (like a real-time app). It’s like flying a spaceship, able to travel anywhere at top speed.
+
+#### Next.js 14 with new features 
+![image](https://github.com/user-attachments/assets/91e9f6ed-c26a-446f-8893-b5c959a34264)
 
 - **New Features:** 
   - **App Router**: An easier way to manage routes in your web app.
