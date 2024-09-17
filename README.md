@@ -116,7 +116,7 @@ When you run this command, it will ask you a few questions:
 - **Would you like to use TypeScript?** Choose either **yes** or **no** (for now, you can select **no** if you are not familiar with TypeScript).
 - **Would you like to use ESLint?** This helps catch mistakes in your code. You can choose **yes** here.
 - **Would you like to use Tailwind CSS?** Select **no** for now, as we are focusing on the basics.
-- **Would you like to use the `src/` directory?** This helps organize your files better. Choose **yes**.
+- **Would you like to use the `src/` directory?** This helps organize your files better. Choose **No**.
 - **Would you like to use the App Router?** **Yes**, because we are using the latest **App Router** of Next.js 14.
 - **Would you like to customize the default import alias?** Just press Enter to skip this.
 
