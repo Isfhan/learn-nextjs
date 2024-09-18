@@ -9,10 +9,21 @@ Imagine you're in Lahore, and you want to visit different places in the city. Yo
 ### Real-world Example:
 
 Think of a popular Pakistani e-commerce website like Daraz. When you visit daraz.pk, you see the home page. If you click on "motherboard," the URL changes to **daraz.pk/motherboard**, and you see a different page. This is routing in action!
+Next.js uses a file-system based router, which means the structure of your files and folders determines the routes in your application. Here's a quick overview of how it works:
 
 ### Understanding Routes
 
 A route is like an address for a specific page on your website. In Next.js, we create routes by organizing our files and folders in a specific way.
+
+### **Basic Concepts**
+
+1. **Folders as Routes**: Each folder in the `app` directory represents a route segment. For example, a folder named `dashboard` will create a route `/dashboard`.
+
+2. **Files as UI Components**: Special files within these folders define the UI and behavior for each route segment:
+   - `page.js` or `page.tsx`: Defines the main content for the route.
+   - `layout.js` or `layout.tsx`: Provides shared UI (like headers or footers) for the route and its children.
+   - `loading.js`: Displays a loading state for the route.
+   - `not-found.js`: Handles 404 errors for the route.
 
 ### File-based Routing in Next.js 14
 
