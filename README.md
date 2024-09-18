@@ -38,9 +38,9 @@ In this structure:
 - `/products/123` shows the content of `app/products/[id]/page.tsx` (where 123 is the product ID)
 
 
-### 1. Static Routes
+### 1. Page Routes
 
-Static routes are the simplest and most common form of routing, directly corresponding to your file structure.
+Page routes are the simplest and most common form of routing, directly corresponding to your file structure.
 
 **When to use:** For pages with fixed content that don't need dynamic data from the URL.
 
