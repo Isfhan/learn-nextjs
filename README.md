@@ -2,33 +2,24 @@
 
 Welcome to our beginner-friendly guide to building a Todo App using React and TypeScript! We'll break this down into easy-to-follow steps, explaining each concept along the way.
 
-### Table of Contents
-1. [Introduction to React](#introduction-to-react)
-2. [Setting Up Your Project](#setting-up-your-project)
-3. [Creating the Basic App Structure](#creating-the-basic-app-structure)
-4. [Adding Todo Functionality](#adding-todo-functionality)
-5. [Enhancing the Todo List](#enhancing-the-todo-list)
-6. [Styling the App](#styling-the-app)
-7. [Conclusion and Next Steps](#conclusion-and-next-steps)
-
 ### 1. Introduction to React
 
-### What is React?
+#### What is React?
 - React is a JavaScript library for building user interfaces.
 - It lets you create reusable components to build your app.
 
-### Why Use React?
+#### Why Use React?
 - **Reusable Components**: Build once, use many times.
 - **Efficient Updates**: React updates only what needs to change on your page.
 - **Large Community**: Lots of resources and support available.
 
 ### 2. Setting Up Your Project
 
-### Step 1: Install Node.js and npm
+#### Step 1: Install Node.js and npm
 1. Go to [nodejs.org](https://nodejs.org/)
 2. Download and install Node.js (npm comes with it)
 
-### Step 2: Create a New React App with TypeScript
+#### Step 2: Create a New React App with TypeScript
 Open your command prompt or terminal and run:
 
 ```bash
@@ -44,7 +35,7 @@ This will:
 
 Your app will open in a browser at `http://localhost:3000`.
 
-### 3. Creating the Basic App Structure
+#### 3. Creating the Basic App Structure
 
 ### Step 1: Clean Up the Project
 1. In the `src/` folder, delete all files except `App.tsx` and `index.tsx`.
@@ -64,14 +55,14 @@ function App(): JSX.Element {
 export default App;
 ```
 
-### Step 2: Understanding Components
+#### Step 2: Understanding Components
 - The `App` function is a component.
 - Components are like building blocks for your web page.
 - They help organize and reuse code.
 
 ### 4. Adding Todo Functionality
 
-### Step 1: Set Up State for Todos
+#### Step 1: Set Up State for Todos
 Update `src/App.tsx`:
 
 ```tsx
@@ -137,7 +128,7 @@ const handleAddTodo = (): void => {
 
 ### 5. Enhancing the Todo List
 
-### Step 1: Display the Todo List
+#### Step 1: Display the Todo List
 Add this to your return statement, after the button:
 
 ```tsx
@@ -152,7 +143,7 @@ Add this to your return statement, after the button:
 </ul>
 ```
 
-### Step 2: Add Ability to Complete Todos
+#### Step 2: Add Ability to Complete Todos
 Update the `<li>` in your list:
 
 ```tsx
@@ -177,7 +168,7 @@ const handleToggleComplete = (index: number): void => {
 };
 ```
 
-### Step 3: Add Ability to Delete Todos
+#### Step 3: Add Ability to Delete Todos
 Update the `<li>` in your list again:
 
 ```tsx
