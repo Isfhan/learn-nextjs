@@ -26,7 +26,7 @@ In this course, we'll explore the evolution of web development and dive deep int
 
 ## Course Structure
 
-1. **Introduction to Web Development Evolution**
+1. **The Journey from Simple Websites to Next.js 14: How Web Development Evolved**
    - From static HTML to modern frameworks
 
 2. **React Fundamentals Review**
