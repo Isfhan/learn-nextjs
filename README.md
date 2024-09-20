@@ -2,16 +2,28 @@
 
 Welcome to our beginner-friendly guide to building a Todo App using React and TypeScript! We'll break this down into easy-to-follow steps, explaining each concept along the way.
 
-### 1. Introduction to React
-
-#### What is React?
-- React is a JavaScript library for building user interfaces.
-- It lets you create reusable components to build your app.
-
-#### Why Use React?
-- **Reusable Components**: Build once, use many times.
-- **Efficient Updates**: React updates only what needs to change on your page.
-- **Large Community**: Lots of resources and support available.
+  ### 1. Introduction to React
+  
+  #### What is React?
+  
+  ![image](https://github.com/user-attachments/assets/1e80571e-6d88-427b-ad23-5f8f6810f15c)
+  
+  - React is a JavaScript library for building user interfaces.
+  - It lets you create reusable components to build your app.
+  
+  #### Why Use React?
+  
+  - React is a popular JavaScript library used for building user interfaces. Here are some reasons why you might want to use React12:
+  - React is easy to learn and understand.
+  - React has a very active community where you can contribute and get help when needed.
+  - There are a lot of job opportunities for React developers.
+  - React is the perfect choice when you want to develop Single Page Applications (SPAs) as it can rewrite and update content on a web page without requiring to reload or refresh the page.
+  - React Native is the best React framework for developing native mobile apps.
+  - Large social media sites, such as Instagram, Facebook, and Reddit use ReactJS for front-end website development needs.
+  
+  - **Reusable Components**: Build once, use many times.
+  - **Efficient Updates**: React updates only what needs to change on your page.
+  - **Large Community**: Lots of resources and support available.
 
 ### 2. Setting Up Your Project
 
@@ -20,6 +32,9 @@ Welcome to our beginner-friendly guide to building a Todo App using React and Ty
 2. Download and install Node.js (npm comes with it)
 
 #### Step 2: Create a New React App with TypeScript
+
+![image](https://github.com/user-attachments/assets/ef7e3084-b31f-4ee7-8756-314c9df51beb)
+
 Open your command prompt or terminal and run:
 
 ```bash
