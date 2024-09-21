@@ -2,6 +2,34 @@
 
 Welcome to our beginner-friendly guide to building a Todo App using React and TypeScript with Vite! We'll break this down into easy-to-follow steps, explaining each concept along the way. This tutorial will help you learn React fundamentals that are also applicable to Next.js development.
 
+
+### How web applications are built and experienced. Here's a brief history:
+
+#### Early Days of the Web
+- **1990s**: Initially, web pages were static, composed of HTML and CSS, with minimal interactivity. JavaScript, introduced in 1995, allowed for some dynamic content but was limited in scope¹.
+
+#### Rise of JavaScript Libraries
+- **2000s**: JavaScript libraries like jQuery emerged, simplifying DOM manipulation and enhancing interactivity. However, most rendering was still done on the server side².
+
+#### Introduction of Client-Side Frameworks
+- **2010s**: The advent of client-side frameworks like AngularJS (2010), React (2013), and Vue.js (2014) marked a significant shift. These frameworks allowed developers to build Single Page Applications (SPAs), where most of the rendering happens on the client side¹³.
+
+#### Modern Era
+- **Present**: Today, CSR is a common approach for building highly interactive and dynamic web applications. Frameworks like Next.js and Nuxt.js offer hybrid solutions, combining CSR with server-side rendering (SSR) for better performance and SEO².
+
+#### What is client-side rendering (CSR)?
+![image](https://github.com/user-attachments/assets/89c9aebc-8ad9-4950-b76c-01ce7cf6cc92)
+
+Client-side rendering (CSR for short) is a JavaScript rendering method that uses JavaScript to render a website or application in the browser. With CSR, the processing and rendering of the content happens in the browser rather than on the server.
+With CSR, the server sends a barebones HTML file with links to JavaScript files. The browser then downloads the required resources and uses them to populate the page and render the content.
+CSR is commonly used for applications that have dynamic content and require a high degree of interactivity, like chat apps and social media platforms. It is also ideal for single-page applications (SPAs) and internal applications like admin and user dashboards that don’t need to be indexed by search engines.
+
+
+#### What is Server Side Rendering (SSR)?
+![image](https://github.com/user-attachments/assets/26991772-48b4-4b0c-ad3f-8e852f54e18f)
+
+SSR is when you render your website's HTML on the server. This is as opposed to Client Side Rendering (CSR) when your website renders HTML in the browser by manipulating the DOM with JavaScript.
+
 ### 1. Introduction to React
 
 #### What is React?
