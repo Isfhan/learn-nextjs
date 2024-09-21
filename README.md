@@ -44,6 +44,7 @@ cd todo-app
 npm install
 npm run dev
 ```
+![image](https://github.com/user-attachments/assets/db1b2a7a-c077-4fec-9a84-c373093dbeba)
 
 This will:
 - Create a new React project with TypeScript using Vite
@@ -51,7 +52,11 @@ This will:
 - Install the necessary dependencies
 - Start the development server
 
+![image](https://github.com/user-attachments/assets/6aa74f19-fce0-4d72-92ee-a315991f19c3)
+
 Your app will open in a browser at `http://localhost:5173`.
+
+![image](https://github.com/user-attachments/assets/34da8ed7-94f3-4486-905f-0e2782a8ec28)
 
 ### 3. Understanding the Project Structure
 
@@ -81,6 +86,8 @@ export default App
 - Components are like building blocks for your web page.
 - They help organize and reuse code.
 
+![image](https://github.com/user-attachments/assets/57695d01-8c19-428c-9615-a817626ee7a4)
+
 ### 4. Adding Todo Functionality
 
 #### Step 1: Set Up State for Todos
@@ -107,6 +114,8 @@ function App(): JSX.Element {
 
 export default App
 ```
+
+![image](https://github.com/user-attachments/assets/9f6df942-8845-4977-a734-fa0298ff8475)
 
 **Explanation:**
 - `useState` is a React hook that lets us add state to our component.
@@ -142,6 +151,8 @@ const handleAddTodo = (): void => {
   }
 }
 ```
+
+![image](https://github.com/user-attachments/assets/3a4aced4-032d-445f-8ae2-f2b67b55df79)
 
 **Explanation:**
 - The input field is connected to the `newTodo` state.
@@ -215,21 +226,48 @@ const handleDeleteTodo = (index: number): void => {
 
 ### 6. Styling the App
 
-Create a new file `src/App.css` and add:
+Open App.css file `src/App.css` and add:
 
 ```css
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background: conic-gradient(at 50% calc(100% / 6), #4da3e5 60deg, #0000 0),
+    conic-gradient(at calc(100% / 6) 50%, #0000 240deg, #4da3e5 0),
+    conic-gradient(
+      from 180deg at calc(100% / 6) calc(500% / 6),
+      #4da3e5 60deg,
+      #0000 0
+    ),
+    conic-gradient(from 180deg at calc(500% / 6), #0000 240deg, #4da3e5 0)
+      calc(4 * 0.866 * 16px) 0,
+    repeating-linear-gradient(-150deg, #e53950 0 calc(100% / 6), #0000 0 50%),
+    repeating-linear-gradient(-30deg, #fff 0 calc(100% / 6), #ededed 0 50%);
+  background-size: calc(6 * 0.866 * 16px) calc(3 * 16px);
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
-  max-width: 400px;
-  margin: 50px auto;
+  width: 600px;
+  min-height: 400px;
   padding: 20px;
   background-color: #fff;
   border-radius: 8px;
+  text-align: right;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  box-shadow: 12px 15px 47px -11px rgba(0, 0, 0, 0.76);
+  -webkit-box-shadow: 12px 15px 47px -11px rgba(0, 0, 0, 0.76);
+  -moz-box-shadow: 12px 15px 47px -11px rgba(0, 0, 0, 0.76);
+}
+
+h1 {
+  text-align: center;
 }
 
 input,
@@ -242,18 +280,29 @@ input {
   width: calc(100% - 22px);
   border: 1px solid #ddd;
   border-radius: 4px;
+  font-size: 17px;
 }
 
 button {
-  background-color: #0070f3;
   color: white;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
+.add-btn {
+  background-color: #0070f3;
+}
 
-button:hover {
+.add-btn:hover {
   background-color: #0051bb;
+}
+
+.delete-btn {
+  background-color: #ff4d4f;
+}
+
+.delete-btn:hover {
+  background-color: #ff7875;
 }
 
 ul {
@@ -283,13 +332,18 @@ li span {
 .delete-btn:hover {
   background-color: #ff7875;
 }
+
 ```
+
+![image](https://github.com/user-attachments/assets/ade4ba7b-5d09-42d1-b646-0eb138f1b034)
+
 
 Import the CSS in `src/App.tsx`:
 
 ```tsx
 import './App.css'
 ```
+Note: **Remove everting from index.css file**.
 
 Update the outer `<div>` in your `App` component to include the `container` class:
 
@@ -298,6 +352,8 @@ Update the outer `<div>` in your `App` component to include the `container` clas
   {/* ... existing content ... */}
 </div>
 ```
+
+![image](https://github.com/user-attachments/assets/0125691c-c692-4026-a655-f08452253bee)
 
 ### 7. Conclusion and Next Steps
 
