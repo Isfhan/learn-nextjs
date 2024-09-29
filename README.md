@@ -69,7 +69,36 @@ export default function Contact() {
 - About page: `http://yourdomain.com/about`
 - Contact page: `http://yourdomain.com/contact`
 
-### 2. Dynamic Routes
+### 2. Nested Routes
+
+Nested routes allow you to create hierarchical page structures, reflecting more complex site architectures.
+
+**When to use:** When you need to organize your content in a hierarchical structure, such as for product categories or documentation sections.
+
+**Code Example:**
+```typescript
+// app/products/page.tsx
+export default function Products() {
+  return <h1>All Products</h1>
+}
+
+// app/products/electronics/page.tsx
+export default function Electronics() {
+  return <h1>Electronics Products</h1>
+}
+
+// app/products/electronics/computers/page.tsx
+export default function Computers() {
+  return <h1>Computer Products</h1>
+}
+```
+
+**How to access:**
+- All Products: `http://yourdomain.com/products`
+- Electronics: `http://yourdomain.com/products/electronics`
+- Computers: `http://yourdomain.com/products/electronics/computers`
+
+### 3. Dynamic Routes
 
 Dynamic routes allow you to create pages that can handle variable parameters in the URL.
 
@@ -86,7 +115,7 @@ export default function Product({ params }: { params: { id: string } }) {
 **How to access:**
 - Product page: `http://yourdomain.com/products/1234` (where 1234 is the product ID)
 
-### 3. Route Groups
+### 4. Route Groups
 
 Route groups allow you to organize routes without affecting the URL structure.
 
@@ -111,7 +140,7 @@ export default function UserManagement() {
 
 Note that "admin" doesn't appear in the URL.
 
-### 4. Catch-all Routes
+### 5. Catch-all Routes
 
 Catch-all routes can handle an unknown number of path segments.
 
@@ -128,7 +157,7 @@ export default function Doc({ params }: { params: { slug: string[] } }) {
 **How to access:**
 - Documentation page: `http://yourdomain.com/docs/react/hooks/usestate`
 
-### 5. Optional Catch-all Routes
+### 6. Optional Catch-all Routes
 
 Similar to catch-all routes, but also matches the parent path.
 
@@ -149,7 +178,7 @@ export default function Blog({ params }: { params: { slug?: string[] } }) {
 - All blog posts: `http://yourdomain.com/blog`
 - Filtered blog posts: `http://yourdomain.com/blog/2023/06`
 
-### 6. Parallel Routes
+### 7. Parallel Routes
 
 Parallel routes allow you to simultaneously render multiple pages in the same layout.
 
@@ -186,7 +215,7 @@ export default function Notifications() {
 **How to access:**
 - Dashboard with parallel routes: `http://yourdomain.com/dashboard`
 
-### 7. Intercepting Routes
+### 8. Intercepting Routes
 
 Intercepting routes allow you to intercept a route and show different content while keeping the original URL.
 
@@ -208,7 +237,6 @@ export default function PhotoModal({ params }: { params: { id: string } }) {
 **How to access:**
 - Gallery page: `http://yourdomain.com/gallery`
 - Photo modal: `http://yourdomain.com/gallery/photo/1234` (where 1234 is the photo ID)
-
 ### Combining Techniques: E-commerce Site Example
 
 Often, you'll need to combine these techniques for more complex routing scenarios.
