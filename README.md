@@ -39,6 +39,57 @@ In this structure:
 - `/products` shows the content of `app/products/page.tsx`
 - `/products/123` shows the content of `app/products/[id]/page.tsx` (where 123 is the product ID)
 
+### Types of Routes in Next.js
+
+1. Page Routes
+2. Nested Routes
+3. Dynamic Routes
+4. Route Groups
+5. Catch-all Routes
+6. Optional Catch-all Routes
+7. Parallel Routes
+8. Intercepting Routes
+
+Each of these routing techniques serves different purposes and can be combined to create flexible and powerful routing structures in your Next.js applications. The key is to choose the right technique (or combination of techniques) based on your specific requirements and the complexity of your application.
+
+### Next.js Routing Conventions
+
+To better understand how Next.js handles routing, it's important to know about some special files and conventions:
+
+#### Special Files in Next.js
+
+Next.js uses special files to make your website work smoothly. Here are the main ones:
+
+1. `layout.tsx`: This file creates a shared look for a group of pages.
+2. `page.tsx`: This is where you put the main content of each page.
+3. `loading.tsx`: This shows a loading message or spinner while your page is getting ready.
+4. `not-found.tsx`: This shows a message when a page can't be found.
+5. `error.tsx`: This handles errors and shows a nice message to users.
+
+#### How Pages Are Built
+
+Next.js builds your pages in a specific order:
+
+1. It starts with the `layout.tsx`
+2. Then it adds any error handling (`error.tsx`)
+3. Next comes the loading screen (`loading.tsx`)
+4. Finally, it puts in the main content (`page.tsx`)
+
+If you have pages inside other pages, it builds them from the outside in.
+
+#### Keeping Files Together
+
+Next.js lets you keep all the files for a page in the same folder. This includes the main page file, any special components, and even CSS files. It's like keeping all your tools for one job in the same toolbox.
+
+This organization helps you:
+- Find files easily
+- Understand how your page works
+- Keep things tidy
+
+Remember, only the `page.tsx` file becomes a web address. The other files are just there to help build that page.
+
+By understanding these routing conventions, you can create well-organized and efficient Next.js applications that are easy to maintain and scale.
+
 
 ### 1. Page Routes
 
